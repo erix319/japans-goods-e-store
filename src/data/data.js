@@ -1,4 +1,4 @@
-export const categories = [
+const rawCategories = [
 	{ id: 'Electronics', name: 'Electronics', img: '/electronics.png' },
 	{ id: 'Clothing', name: 'Clothing', img: '/clothing.png' },
 	{ id: 'Books', name: 'Books', img: '/books.png' },
@@ -6,7 +6,7 @@ export const categories = [
 	{ id: 'Outdoor', name: 'Outdoor', img: '/outdoor.png' },
 ];
 
-export const products = [
+const rawProducts = [
 	{
 		id: 0,
 		categoryId: 'Electronics',
@@ -233,3 +233,10 @@ export const products = [
 		inStock: false,
 	},
 ];
+
+// public/ assets are referenced as root-absolute paths above; prepend Vite's
+// configured base URL so they resolve correctly when deployed under a subpath.
+const withBase = (path) => `${import.meta.env.BASE_URL}${path.replace(/^\//, '')}`;
+
+export const categories = rawCategories.map((category) => ({ ...category, img: withBase(category.img) }));
+export const products = rawProducts.map((product) => ({ ...product, img: withBase(product.img) }));
