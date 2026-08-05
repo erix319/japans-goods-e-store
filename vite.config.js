@@ -1,7 +1,7 @@
 import {defineConfig} from 'vite';
 import react from '@vitejs/plugin-react';
 
-const repoName = 'react-router-course';
+const repoName = 'japans-goods-e-store';
 
 // https://vite.dev/config/
 export default defineConfig({
