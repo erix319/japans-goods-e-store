@@ -202,8 +202,8 @@ Pull requests are welcome. For major changes, please open an issue first to disc
 
 **George Pavlov**
 
-[GitHub: @erix319](https://github.com/erix319 'Go to my GitHub page')
-[Project GitHub](https://github.com/erix319/japans-goods-shop "Go to project's GitHub page")
+[GitHub: @pafuluofu-dev](https://github.com/pafuluofu-dev 'Go to my GitHub page')
+[Project GitHub](https://github.com/pafuluofu-dev/japans-goods-shop "Go to project's GitHub page")
 
 ## 🙏 Acknowledgements
 
